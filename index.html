@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Lucas Collazo">
+    <meta name="keywords" content="HTML, CSS, Javascript, Front End, Memory Game, Jogo da Memória">
+    <title>Jogo da Memória</title>
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    
+</head>
+<body>
+    <div class="modal-menu">
+        <span id="loading"></span>
+        <div class="menu">
+            <div class="logo"><img src="img/memorygame_logo.png" alt=""></div>
+            <div class="buttons"><button id="jogar">Jogar</button></div>
+            <div class="contact">
+                <a href="https://github.com/LucasCollazo"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.instagram.com/lucaslcollazo/"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            <div class="developer"><h3>Desenvolvido por Lucas Collazo - v1</h3></div>
+        </div>
+    </div>
+    <div class="modal-board">
+        <div class="board">
+            <div class="top">
+            <h3><i class="fa-solid fa-clock"></i> <span id="min">00</span>:<span id="sec">00</span> <i class="fa-solid fa-gamepad"></i> <span id="attempts">0</span> <i class="fa-solid fa-circle-exclamation"></i> <span id="errors">0</span></h3>
+            </div>
+            <div class="content"></div>
+            <div class="footer"><h3>Desenvolvido por Lucas Collazo - v1</h3></div>
+        </div>
+    </div>
+    <script src="js/loading.js"></script>
+    <script src="js/board.js"></script>
+</body>
+</html>

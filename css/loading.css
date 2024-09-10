@@ -1,0 +1,20 @@
+#loading{
+    display: block;
+    width: 80px;
+    height: 80px;
+    border: 14px solid #ffff00;
+    border-top: 14px solid transparent;
+    border-radius: 50%;
+    animation: loading 1s linear infinite;
+    transition: 1s linear;
+}
+
+@keyframes loading{
+    0%{
+        transform: rotate(0deg);
+    }
+
+    100%{
+        transform: rotate(360deg);
+    }
+}

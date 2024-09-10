@@ -1,0 +1,96 @@
+.modal-board{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(#808, #cc00cc, #808);
+    transition: 1s linear;
+}
+
+.top, .footer{
+    padding: 6px;
+    background: #ffff00;
+    border-radius: 8PX;
+    border: 5px solid #5b0079;
+    margin-bottom: 8px;
+    margin-top: 8px;
+    text-align: center;
+}
+.top h3, .footer h3{
+    font-size: 16px;
+    color: #5b0079;
+}
+
+.top i{
+    font-size: 18px;
+}
+
+.content{
+    display: grid;
+    grid-template-columns: repeat(4, 90px);
+    gap: 4px;
+}
+
+.card{
+    display: flex;
+    width: 90px;
+    height: 90px;
+    position: relative;
+    transform: rotateY(180deg);
+    transition: ease .3s;
+    cursor: pointer;
+}
+
+.card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.card::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-image: url(../img/verse_card.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: rotateY(-180deg);
+}
+
+.flip{
+    transform: rotateY(0deg);
+    cursor: default;
+}
+
+.flip::after{
+    visibility: hidden;
+}
+
+.equal{
+    transform: rotateY(0deg);
+    cursor: default;
+    animation: glow ease .5s;
+}
+
+.equal::after{
+    visibility: hidden;
+}
+
+@keyframes glow {
+    0%{
+        filter: brightness(1);
+        box-shadow: 0 0 1px #ffff00;
+    }
+    50%{
+        filter: brightness(1.5);
+        box-shadow: 0 0 30px #ffff00;
+    }
+    100%{
+        filter: brightness(1);
+        box-shadow: 0;
+    }
+}
