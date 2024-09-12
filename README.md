@@ -7,3 +7,5 @@ Como mencionei estou com tempo bem escasso para continuar estudando front-end ma
 
 ![Captura de tela](screens/cap_memorygame_menu.png)
 ![Captura de tela](screens/cap_memorygame_board.png)
+
+[Clique aqui para jogar](https://lucascollazo.github.io/memorygame/)
